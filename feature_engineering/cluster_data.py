@@ -10,7 +10,7 @@
 """
 # Import related libraries
 
-from series_period import *
+from ts_processing.series_period import *
 from ts_processing.ts_feature import *
 import pandas as pd
 

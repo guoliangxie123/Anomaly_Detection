@@ -1,4 +1,4 @@
-﻿from series_period import *
+﻿from ts_processing.series_period import *
 import  pandas as pd
 
 
