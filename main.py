@@ -10,7 +10,7 @@ if __name__ == '__main__':
     data = data['Poisition'][100000:].values
     p1 = PeriodDetection(data, 3)
     fft_periods = p1.top3_amplitude()[1]
-    periods = p1.lag_periods(fft_periods)
+    periods = p1.lag_periods()
     result = is_period_series(periods[1])
 
     print(fft_periods)

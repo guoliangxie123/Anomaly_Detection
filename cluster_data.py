@@ -9,18 +9,10 @@
 # Description：
 """
 # Import related libraries
-import random
 
 from series_period import *
-from ts_feature import *
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
-from matplotlib import pyplot as plt
-from sklearn.cluster import KMeans
-from sklearn import preprocessing
+from ts_processing.ts_feature import *
 import pandas as pd
-import numpy as np
-import seaborn
 
 
 class data_preprocessing(object):
