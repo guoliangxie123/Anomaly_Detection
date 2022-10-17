@@ -56,7 +56,7 @@ def signal_stl(data, period):
     stl = STL(data, period, robust=True)
     res_robust = stl.fit()
     seasonal, trend, resid = res_robust.seasonal, res_robust.trend, res_robust.resid
-    res_robust.plot().show()
+    # res_robust.plot().show()
     return seasonal, trend, resid, res_robust
 
 
@@ -92,6 +92,7 @@ def outlier_detection2(data):
 
 if __name__ == '__main__':
     data = generate_data()
+    # plt.plot(range(len(data)),data)
     trend_data = signal_stl(data, 14)[1]
     # print(trend_data)
     resid_data = signal_stl(data, 14)[2]
