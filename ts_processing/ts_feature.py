@@ -69,6 +69,8 @@ def get_time_domain_features(data):
 
 '''
 
+# 传入的数据需要是np.array;很重要
+
 import numpy as np
 
 import scipy.stats
